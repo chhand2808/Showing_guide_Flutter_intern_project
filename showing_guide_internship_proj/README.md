@@ -8,10 +8,16 @@ This project is just the frontend interface.
 
 It has no functionality.
 
-To run this application on chrome via the Android Studio IDE, run the following command on the Terminal
+To Try this project on your local device, you can fork this repository and then clone it on your local device.
+
+After that, open the folder in Android Studio IDE or VS code.
+
+There you can find the different folders, among them the most important is the 'lib' folder containing the main.dart file. 
+
+To run this application on chrome via the Android Studio IDE or VS code, run the following command on the Terminal
 
 -->  flutter run --no-sound-null-safety
 
-To Build the APK for this application via the Android Studio IDE, run the following command on the Terminal
+To Build the APK for this application via the Android Studio IDE or VS code, run the following command on the Terminal
 
 -->  flutter build apk --release --no-sound-null-safety
