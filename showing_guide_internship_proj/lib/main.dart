@@ -105,7 +105,7 @@ class _showingGuideState extends State<showingGuide> {
             PropertyHistoryWidget(),
             Df(),
             PoiP(),
-            MyNotesScreen(),
+            SizedBox(height:130,width: 100, child: MyNotesScreen()),
             ListingAgentWidget(),
 
 
