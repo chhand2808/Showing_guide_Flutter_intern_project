@@ -1,16 +1,17 @@
 # showing_guide_internship_proj
 
-A new Flutter project.
+This project is the submission for the internship task assessment for Flutter developer internship at Showing Guide
 
 ## Getting Started
 
-This project is a starting point for a Flutter application.
+This project is just the frontend interface.
 
-A few resources to get you started if this is your first Flutter project:
+It has no functionality.
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+To run this application on chrome via the Android Studio IDE, run the following command on the Terminal
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+-->  flutter run --no-sound-null-safety
+
+To Build the APK for this application via the Android Studio IDE, run the following command on the Terminal
+
+-->  flutter build apk --release --no-sound-null-safety
