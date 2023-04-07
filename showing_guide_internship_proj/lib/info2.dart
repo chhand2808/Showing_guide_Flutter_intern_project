@@ -34,16 +34,31 @@ class _Df extends State<Df> {
               child: Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
-                  Text(
-                    '     Demographics',
-                    style: TextStyle(
-                      color: isTapped ? Colors.white : Colors.grey[600],
-                      fontWeight: FontWeight.bold,
-                    ),
+                  Row(
+                    children: [
+                      Padding(
+                        padding: const EdgeInsets.only(left: 10.0),
+                        child: Icon(Icons.circle_outlined,color: Colors.black,),
+                      ),
+                      Padding(
+                        padding: const EdgeInsets.only(left: 15.0),
+                        child: Text(
+                          'Demographics',
+                          style: TextStyle(
+                            color: isTapped ? Colors.white : Colors.grey[600],
+                            fontWeight: FontWeight.bold,
+                          ),
+                        ),
+                      ),
+                    ],
                   ),
-                  Icon(
-                    isTapped ? Icons.arrow_drop_up : Icons.arrow_drop_down,
-                    color: isTapped ? Colors.white : Colors.black,
+
+                  Padding(
+                    padding: const EdgeInsets.only(right: 10.0),
+                    child: Icon(
+                      isTapped ? Icons.arrow_drop_up : Icons.arrow_drop_down,
+                      color: isTapped ? Colors.white : Colors.black,
+                    ),
                   ),
                 ],
               ),

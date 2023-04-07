@@ -34,17 +34,33 @@ class _KeyFacts extends State<KeyFacts> {
               child: Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
-                  Text(
-                    '     Key Facts',
-                    style: TextStyle(
-                      color: isTapped ? Colors.white : Colors.grey[600],
-                      fontWeight: FontWeight.bold,
-                    ),
+                  Row(
+                    mainAxisAlignment: MainAxisAlignment.start,
+                    children: [
+                      Padding(
+                        padding: const EdgeInsets.only(left: 10.0),
+                        child: Icon(Icons.key,
+                          color: Colors.black,),
+                      ),
+                      Padding(
+                        padding: const EdgeInsets.only(left: 15.0),
+                        child: Text(
+                          'Key Facts',
+                          style: TextStyle(
+                            color: isTapped ? Colors.white : Colors.grey[600],
+                            fontWeight: FontWeight.bold,
+                          ),
+                        ),
+                      ),
+                    ],
                   ),
 
-                  Icon(
-                    isTapped ? Icons.arrow_drop_up : Icons.arrow_drop_down,
-                    color: isTapped ? Colors.white : Colors.black,
+                  Padding(
+                    padding: const EdgeInsets.only(right: 10.0),
+                    child: Icon(
+                      isTapped ? Icons.arrow_drop_up : Icons.arrow_drop_down,
+                      color: isTapped ? Colors.white : Colors.black,
+                    ),
                   ),
                 ],
               ),

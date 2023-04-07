@@ -64,17 +64,26 @@ class _showingGuideState extends State<showingGuide> {
             ),
             MyButtonF(onTap: back,),
 
-            Padding(
-              padding: const EdgeInsets.all(15),
-              child: Text('MLS#: E5579076',
-                style: TextStyle(
-                  fontWeight: FontWeight.bold,
-                  fontSize: 16,
+            Row(
+              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+              children: [
+                Padding(
+                  padding: const EdgeInsets.all(15),
+                  child: Text('MLS#: E5579076',
+                    style: TextStyle(
+                      fontWeight: FontWeight.bold,
+                      fontSize: 16,
+                    ),
+                  ),
                 ),
-              ),
+                Padding(
+                  padding: const EdgeInsets.only(right: 25.0),
+                  child: Icon(Icons.shopping_cart_outlined,color: Colors.black,),
+                )
+              ],
             ),
             Padding(
-              padding: const EdgeInsets.all(15),
+              padding: const EdgeInsets.only(left:15 ,top: 10,bottom: 10),
               child: Row(
                 children: [
                   Text('Listed for:'),
@@ -89,6 +98,12 @@ class _showingGuideState extends State<showingGuide> {
                 ],
               ),
             ),
+            Padding(
+              padding: const EdgeInsets.all(15.0),
+              child: Text("2118 Thornridge Cir. Syracuse, Connecticut 35624"),
+            ),
+
+
             Row(
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
@@ -107,8 +122,6 @@ class _showingGuideState extends State<showingGuide> {
             PoiP(),
             SizedBox(height:130,width: 100, child: MyNotesScreen()),
             ListingAgentWidget(),
-
-
           ],
         ),
         ),
